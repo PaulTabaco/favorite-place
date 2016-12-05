@@ -12,6 +12,7 @@
 		DA0AE6F91C381AB50040E165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE6F71C381AB50040E165 /* Main.storyboard */; };
 		DA0AE6FB1C381AB50040E165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE6FA1C381AB50040E165 /* Assets.xcassets */; };
 		DA0AE6FE1C381AB50040E165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0AE6FC1C381AB50040E165 /* LaunchScreen.storyboard */; };
+		DA0AE7061C386D0C0040E165 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0AE7051C386D0C0040E165 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DA0AE6FA1C381AB50040E165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0AE6FD1C381AB50040E165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0AE6FF1C381AB50040E165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0AE7051C386D0C0040E165 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DA0AE6FA1C381AB50040E165 /* Assets.xcassets */,
 				DA0AE6FC1C381AB50040E165 /* LaunchScreen.storyboard */,
 				DA0AE6FF1C381AB50040E165 /* Info.plist */,
+				DA0AE7051C386D0C0040E165 /* DetailVC.swift */,
 			);
 			path = "favorite-place";
 			sourceTree = "<group>";
@@ -91,12 +94,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Home;
 				TargetAttributes = {
 					DA0AE6EF1C381AB50040E165 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3576WDCD7W;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -138,6 +142,7 @@
 			files = (
 				DA0AE6F61C381AB50040E165 /* ViewController.swift in Sources */,
 				DA0AE6F41C381AB50040E165 /* AppDelegate.swift in Sources */,
+				DA0AE7061C386D0C0040E165 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +181,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -221,8 +228,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -241,6 +250,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -250,10 +260,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "favorite-place/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "home.favorite-place";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.favorite-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -261,10 +273,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "favorite-place/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "home.favorite-place";
+				PRODUCT_BUNDLE_IDENTIFIER = "home.favorite-pl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -287,6 +301,7 @@
 				DA0AE7041C381AB50040E165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
